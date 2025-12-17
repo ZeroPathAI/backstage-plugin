@@ -22,22 +22,14 @@
     "sca"
   ],
   "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.esm.js"
-    },
-    "./alpha": {
-      "import": "./dist/alpha.esm.js",
-      "types": "./dist/alpha.d.ts",
-      "default": "./dist/alpha.esm.js"
-    },
+    ".": "./src/index.ts",
+    "./alpha": "./src/alpha.tsx",
     "./package.json": "./package.json"
   },
   "typesVersions": {
     "*": {
       "alpha": [
-        "dist/alpha.d.ts"
+        "src/alpha.tsx"
       ],
       "package.json": [
         "package.json"
@@ -89,5 +81,6 @@
     "config.d.ts"
   ],
   "configSchema": "config.d.ts",
-  "module": "./dist/index.esm.js"
+  "module": "./dist/index.esm.js",
+  "packageManager": "yarn@4.12.0+sha512.f45ab632439a67f8bc759bf32ead036a1f413287b9042726b7cc4818b7b49e14e9423ba49b18f9e06ea4941c1ad062385b1d8760a8d5091a1a31e5f6219afca8"
 }

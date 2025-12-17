@@ -8,7 +8,12 @@ dist-types/
 # Package tarballs
 *.tgz
 
-# Environment files (should never be committed)
+# Yarn (keep .yarn/plugins for Yarn 4)
+.yarn/cache
+.yarn/install-state.gz
+.pnp.*
+
+# Environment files
 .env
 .env.*
 !.env.example
